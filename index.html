@@ -12,18 +12,16 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Frontend Mentor | [Challenge Name Here]</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main class="main-container grid">
@@ -31,7 +29,7 @@
         <div class="header-textBox">
           <h1 class="heading-primary">Social Media Dashboard</h1>
 
-          <p class="followers-count">Total Followers: 23,004</p>
+          <p class="total-followers-count">Total Followers: 23,004</p>
         </div>
 
         <div class="theme-switcher-container">
@@ -40,99 +38,205 @@
         </div>
       </header>
 
-      <section class="dashboard-main grid">
-        <div class="card facebook-card">
-          <p class="account-name"><span class="social-icon"></span>@nathanf</p>
-          <p class="followers-count">1987</p>
-          <p class="followers-text">Followers</p>
-          <p class="status-text"><span class="arrow-icon"></span>12 Today</p>
+      <section class="section-dashboard-main grid">
+        <div class="card facebook-card flex">
+          <div class="account-name flex">
+            <img src="/images/icon-facebook.svg" alt="" class="social--icon" />
+
+            <p class="account--name">@nathanf</p>
+          </div>
+
+          <div class="followers-textBox">
+            <p class="followers-count">1987</p>
+
+            <p class="followers-text">Followers</p>
+          </div>
+
+          <div class="status-text flex">
+            <img src="./images/icon-up.svg" alt="" class="arrow-up" />
+
+            <p class="status--text-up">12 Today</p>
+          </div>
         </div>
 
-        <div class="card twitter-card">
-          <p class="account-name"><span class="social-icon"></span>@nathanf</p>
-          <p class="followers-count">1044</p>
-          <p class="followers-text">Followers</p>
-          <p class="status-text"><span class="arrow-icon"></span>99 Today</p>
+        <div class="card twitter-card flex">
+          <div class="account-name flex">
+            <img src="./images/icon-twitter.svg" alt="" class="social--icon" />
+            <p class="account--name">@nathanf</p>
+          </div>
+
+          <div class="followers-textBox">
+            <p class="followers-count">1044</p>
+
+            <p class="followers-text">Followers</p>
+          </div>
+
+          <div class="status-text flex">
+            <img src="./images/icon-up.svg" alt="" class="arrow-up" />
+
+            <p class="status--text-up">99 Today</p>
+          </div>
         </div>
 
-        <div class="card instagram-card">
-          <p class="account-name">
-            <span class="social-icon"></span>@realnathanf
-          </p>
-          <p class="followers-count">11k</p>
-          <p class="followers-text">Followers</p>
-          <p class="status-text"><span class="arrow-icon"></span>1099 Today</p>
+        <div class="card instagram-card flex">
+          <div class="account-name flex">
+            <img
+              src="./images/icon-instagram.svg"
+              alt=""
+              class="social--icon"
+            />
+
+            <p class="account--name">@realnathanf</p>
+          </div>
+
+          <div class="followers-textBox">
+            <p class="followers-count">11k</p>
+
+            <p class="followers-text">Followers</p>
+          </div>
+
+          <div class="status-text flex">
+            <img src="./images/icon-up.svg" alt="" class="arrow-up" />
+
+            <p class="status--text-up">1099 Today</p>
+          </div>
         </div>
 
-        <div class="card youtube-card">
-          <p class="account-name"><span class="social-icon"></span>Nathan F.</p>
-          <p class="followers-count">8239</p>
-          <p class="followers-text">Subscribers</p>
-          <p class="status-text"><span class="arrow-icon"></span>144 Today</p>
+        <div class="card youtube-card flex">
+          <div class="account-name flex">
+            <img src="./images/icon-youtube.svg" alt="" class="social--icon" />
+
+            <p class="account--name">Nathan F.</p>
+          </div>
+
+          <div class="followers-textBox">
+            <p class="followers-count">8239</p>
+
+            <p class="followers-text">Subscribers</p>
+          </div>
+
+          <div class="status-text flex">
+            <img src="./images/icon-down.svg" alt="" class="arrow-down" />
+
+            <p class="status--text-down">144 Today</p>
+          </div>
         </div>
       </section>
 
-      <section class="dashboard-overview">
+      <section class="section-dashboard-overview">
         <h2 class="heading-secondary">Overview - Today</h2>
 
-        <div class="overview-container-grid">
-          <div class="card overview-card">
-            <p class="overview-type">Page Views</p>
+        <div class="overview-container grid">
+          <div class="card overview-card grid">
+            <h2 class="overview-type">Page Views</h2>
 
-            <img src="" alt="" class="social-icon" />
+            <img src="./images/icon-facebook.svg" alt="" class="social-icon" />
 
             <p class="overview-number">87</p>
 
-            <p class="overview-status-percentage">3%</p>
+            <div class="overview-percentage flex">
+              <img src="./images/icon-up.svg" alt="" class="arrow-up" />
+
+              <p class="overview-status-percentage status--text-up">3%</p>
+            </div>
           </div>
 
-          <div class="card overview-card">
-            <p class="overview-type">Likes</p>
-            <img src="" alt="" class="social-icon" />
+          <div class="card overview-card grid">
+            <h2 class="overview-type">Likes</h2>
+
+            <img src="./images/icon-facebook.svg" alt="" class="social-icon" />
+
             <p class="overview-number">52</p>
-            <p class="overview-status-percentage">2%</p>
+
+            <div class="overview-percentage flex">
+              <img src="./images/icon-down.svg" alt="" class="arrow-down" />
+
+              <p class="overview-status-percentage status--text-down">2%</p>
+            </div>
           </div>
 
-          <div class="card overview-card">
-            <p class="overview-type">Likes</p>
-            <img src="" alt="" class="social-icon" />
+          <div class="card overview-card grid">
+            <h2 class="overview-type">Likes</h2>
+
+            <img src="./images/icon-instagram.svg" alt="" class="social-icon" />
+
             <p class="overview-number">5462</p>
-            <p class="overview-status-percentage">2257%</p>
+
+            <div class="overview-percentage flex">
+              <img src="./images/icon-up.svg" alt="" class="arrow-up" />
+
+              <p class="overview-status-percentage status--text-up">2257%</p>
+            </div>
           </div>
 
-          <div class="card overview-card">
-            <p class="overview-type">Profile Views</p>
-            <img src="" alt="" class="social-icon" />
+          <div class="card overview-card grid">
+            <h2 class="overview-type">Profile Views</h2>
+
+            <img src="./images/icon-instagram.svg" alt="" class="social-icon" />
+
             <p class="overview-number">52k</p>
-            <p class="overview-status-percentage">1375%</p>
+
+            <div class="overview-percentage flex">
+              <img src="./images/icon-up.svg" alt="" class="arrow-up" />
+
+              <p class="overview-status-percentage status--text-up">1375%</p>
+            </div>
           </div>
 
-          <div class="card overview-card">
-            <p class="overview-type">Retweets</p>
-            <img src="" alt="" class="social-icon" />
+          <div class="card overview-card grid">
+            <h2 class="overview-type">Retweets</h2>
+
+            <img src="./images/icon-twitter.svg" alt="" class="social-icon" />
+
             <p class="overview-number">117</p>
-            <p class="overview-status-percentage">303%</p>
+
+            <div class="overview-percentage flex">
+              <img src="./images/icon-up.svg" alt="" class="arrow-up" />
+
+              <p class="overview-status-percentage status--text-up">303%</p>
+            </div>
           </div>
 
-          <div class="card overview-card">
-            <p class="overview-type">Likes</p>
-            <img src="" alt="" class="social-icon" />
+          <div class="card overview-card grid">
+            <h2 class="overview-type">Likes</h2>
+
+            <img src="./images/icon-twitter.svg" alt="" class="social-icon" />
+
             <p class="overview-number">507</p>
-            <p class="overview-status-percentage">553%</p>
+
+            <div class="overview-percentage flex">
+              <img src="./images/icon-up.svg" alt="" class="arrow-up" />
+
+              <p class="overview-status-percentage status--text-up">553%</p>
+            </div>
           </div>
 
-          <div class="card overview-card">
-            <p class="overview-type">Likes</p>
-            <img src="" alt="" class="social-icon" />
+          <div class="card overview-card grid">
+            <h2 class="overview-type">Likes</h2>
+
+            <img src="./images/icon-youtube.svg" alt="" class="social-icon" />
+
             <p class="overview-number">107</p>
-            <p class="overview-status-percentage">19%</p>
+
+            <div class="overview-percentage flex">
+              <img src="./images/icon-down.svg" alt="" class="arrow-down" />
+
+              <p class="overview-status-percentage status--text-down">19%</p>
+            </div>
           </div>
 
-          <div class="card overview-card">
-            <p class="overview-type">Total Views</p>
-            <img src="" alt="" class="social-icon" />
+          <div class="card overview-card grid">
+            <h2 class="overview-type">Total Views</h2>
+
+            <img src="./images/icon-youtube.svg" alt="" class="social-icon" />
+
             <p class="overview-number">1407</p>
-            <p class="overview-status-percentage">12%</p>
+
+            <div class="overview-percentage flex">
+              <img src="./images/icon-down.svg" alt="" class="arrow-down" />
+
+              <p class="overview-status-percentage status--text-down">12%</p>
+            </div>
           </div>
         </div>
       </section>

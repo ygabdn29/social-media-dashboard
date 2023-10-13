@@ -1,0 +1,174 @@
+:root {
+  --primary-lime-green: hsl(163, 72%, 41%);
+  --primary-bright-red: hsl(356, 69%, 56%);
+  --primary-facebook: hsl(208, 92%, 53%);
+  --primary-twitter: hsl(203, 89%, 53%);
+  --primary-instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+  --primary-youTube: hsl(348, 97%, 39%);
+
+  --dark-toggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+  --light-toggle: hsl(230, 22%, 74%);
+
+  --dark-darker-Blue-bg: hsl(230, 17%, 14%);
+  --dark-darker-blue-top-bg-pattern: hsl(232, 19%, 15%);
+  --dark-desaturated-blue-card-bg: hsl(228, 28%, 20%);
+  --dark-desaturated-blue-text: hsl(228, 34%, 66%);
+  --dark-white-text: hsl(0, 0%, 100%);
+
+  --light-white-bg: hsl(0, 0%, 100%);
+  --light-lighter-pale-blue-top-bg-pattern: hsl(225, 100%, 98%);
+  --light-grayish-blue-card-bg: hsl(227, 47%, 96%);
+  --light-darker-grayish-blue-text: hsl(228, 12%, 44%);
+  --light-darker-blue-text: hsl(230, 17%, 14%);
+
+  --fw-normal: 400;
+  --fw-bold: 700;
+}
+
+html {
+  font-size: 50%;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.heading-primary {
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  font-weight: var(--fw-bold);
+}
+
+.heading-secondary {
+  font-size: 1.75rem;
+  color: var(--light-darker-grayish-blue-text);
+  margin-bottom: 2.25rem;
+}
+
+/* HEADER */
+
+.header {
+  flex-direction: column;
+  padding: 3rem 2.25rem 2.25rem 2.25rem;
+  gap: 3rem;
+}
+
+/* DASHBOARD-MAIN */
+
+.section-dashboard-main {
+  padding: 1.75rem 2.25rem 2.25rem 2.25rem;
+  row-gap: 2.25rem;
+}
+
+.card {
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 3rem 0;
+  gap: 1.75rem;
+  border-radius: 5px;
+  background-color: var(--light-grayish-blue-card-bg);
+}
+
+.account-name {
+  font-size: 1.25rem;
+  font-weight: var(--fw-bold);
+  align-items: center;
+  gap: 1rem;
+
+  color: var(--light-darker-grayish-blue-text);
+}
+
+.followers-count {
+  font-size: 6rem;
+  font-weight: var(--fw-bold);
+
+  color: var(--light-darker-blue-text);
+}
+
+.followers-text {
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  letter-spacing: 5px;
+
+  color: var(--light-darker-grayish-blue-text);
+}
+
+.status-text {
+  font-size: 1.25rem;
+  font-weight: var(--fw-bold);
+  gap: 0.25rem;
+  align-items: center;
+}
+
+.status--text-up {
+  color: var(--primary-lime-green);
+}
+
+.status--text-down {
+  color: var(--primary-bright-red);
+}
+
+/* DASHBOARD OVERVIEW */
+.section-dashboard-overview {
+  padding: 1.75rem 2.25rem 2.25rem 2.25rem;
+}
+
+.overview-container {
+  row-gap: 1.75rem;
+}
+
+.overview-card {
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 2.25rem;
+}
+
+.overview-type,
+.overview-number {
+  justify-self: left;
+  margin-left: 2.25rem;
+}
+
+.social-icon,
+.overview-status-percentage {
+  justify-self: right;
+  margin-right: 2.25rem;
+}
+
+.overview-type {
+  font-size: 1.5rem;
+  color: var(--light-darker-grayish-blue-text);
+}
+
+.overview-number {
+  font-size: 2.5rem;
+  font-weight: var(--fw-bold);
+  align-self: end;
+}
+
+.overview-percentage {
+  justify-content: right;
+  gap: 0.25rem;
+  align-items: center;
+}
+
+.overview-status-percentage {
+  height: inherit;
+  font-weight: var(--fw-bold);
+  font-size: 1.5rem;
+}
