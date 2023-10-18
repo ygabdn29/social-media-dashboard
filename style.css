@@ -76,6 +76,16 @@ body.theme-dark {
   gap: 3rem;
 }
 
+.main-container::before {
+  content: "";
+  padding: 20rem 0;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: var(--top-bg-pattern-color);
+  z-index: -1;
+}
+
 .total-followers-count {
   font-weight: var(--fw-bold);
   color: var(--grayish-text-color);
@@ -318,22 +328,16 @@ label:active:after {
     align-items: center;
   }
 
-  .header::before {
-    content: "";
-    padding: 20rem;
-    position: absolute;
-    left: 0%;
-    width: 100%;
-    background-color: var(--top-bg-pattern-color);
-    z-index: -1;
-  }
-
   .total-followers-count {
     font-size: 1.4rem;
   }
 
   .line-break {
     display: none;
+  }
+
+  .main-container::before {
+    padding: 15rem 0;
   }
 
   /* DASHBOARD MAIN */
